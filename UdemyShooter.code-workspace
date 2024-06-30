@@ -1,0 +1,881 @@
+{
+	"folders": [
+		{
+			"name": "UdemyShooter",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "E:\\Epic Games\\UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "UdemyShooter Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"Debug",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"Debug",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UdemyShooter Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"Debug",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"DebugGame",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"DebugGame",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UdemyShooter Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"DebugGame",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"Development",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"Development",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UdemyShooter Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"Development",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"Test",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"Test",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UdemyShooter Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"Test",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"Shipping",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"Shipping",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UdemyShooter Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UdemyShooter",
+					"Win64",
+					"Shipping",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"Debug",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"Debug",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UdemyShooter IOS Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"Debug",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"DebugGame",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"DebugGame",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UdemyShooter IOS DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"DebugGame",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"Development",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"Development",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UdemyShooter IOS Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"Development",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"Test",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"Test",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UdemyShooter IOS Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"Test",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"Shipping",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"Shipping",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UdemyShooter IOS Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooter IOS Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UdemyShooter",
+					"IOS",
+					"Shipping",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooterEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooterEditor",
+					"Win64",
+					"Debug",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooterEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooterEditor",
+					"Win64",
+					"Debug",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UdemyShooterEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooterEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UdemyShooterEditor",
+					"Win64",
+					"Debug",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooterEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooterEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooterEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooterEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UdemyShooterEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooterEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UdemyShooterEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooterEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooterEditor",
+					"Win64",
+					"Development",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooterEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UdemyShooterEditor",
+					"Win64",
+					"Development",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UdemyShooterEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UdemyShooterEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UdemyShooterEditor",
+					"Win64",
+					"Development",
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Epic Games\\UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch UdemyShooter (Debug)",
+				"request": "launch",
+				"program": "E:\\Unreal_Projects\\UdemyShooter\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "UdemyShooter Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UdemyShooter (DebugGame)",
+				"request": "launch",
+				"program": "E:\\Unreal_Projects\\UdemyShooter\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "UdemyShooter Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UdemyShooter (Development)",
+				"request": "launch",
+				"program": "E:\\Unreal_Projects\\UdemyShooter\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "UdemyShooter Win64 Development Build",
+				"args": [
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UdemyShooter (Test)",
+				"request": "launch",
+				"program": "E:\\Unreal_Projects\\UdemyShooter\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "UdemyShooter Win64 Test Build",
+				"args": [
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UdemyShooter (Shipping)",
+				"request": "launch",
+				"program": "E:\\Unreal_Projects\\UdemyShooter\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "UdemyShooter Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UdemyShooterEditor (Debug)",
+				"request": "launch",
+				"program": "E:\\Epic Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "UdemyShooterEditor Win64 Debug Build",
+				"args": [
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject"
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UdemyShooterEditor (DebugGame)",
+				"request": "launch",
+				"program": "E:\\Epic Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "UdemyShooterEditor Win64 DebugGame Build",
+				"args": [
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject"
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UdemyShooterEditor (Development)",
+				"request": "launch",
+				"program": "E:\\Epic Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "UdemyShooterEditor Win64 Development Build",
+				"args": [
+					"E:\\Unreal_Projects\\UdemyShooter\\UdemyShooter.uproject"
+				],
+				"cwd": "E:\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "E:\\Epic Games\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "E:\\Epic Games\\UE_5.3"
+			}
+		]
+	}
+}
